@@ -254,6 +254,8 @@ class RawEditor extends StatefulWidget {
 
 class RawEditorState extends EditorState
     with
+        TextInputClient, 
+        DeltaTextInputClient,
         AutomaticKeepAliveClientMixin<RawEditor>,
         WidgetsBindingObserver,
         TickerProviderStateMixin<RawEditor>,
